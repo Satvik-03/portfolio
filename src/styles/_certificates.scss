@@ -1,0 +1,37 @@
+// src/styles/_certificates.scss
+@import 'variables';
+
+.certificates-section {
+  padding: 2rem;
+  background-color: $background-color;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.certificate-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certificate-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.certificate-card h3 {
+  margin: 0.5rem 0;
+}
+
+.certificate-card a {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: bold;
+}
