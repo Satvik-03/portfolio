@@ -1,0 +1,53 @@
+@import 'variables';
+
+.certificates-section {
+  padding: 5rem 2rem;
+  background: radial-gradient(circle, lighten($background-color, 10%), white);
+  color: $text-color;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .certificate-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $secondary-color;
+      font-weight: bold;
+      text-decoration: underline;
+      &:hover {
+        color: darken($secondary-color, 15%);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

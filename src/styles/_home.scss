@@ -1,0 +1,18 @@
+@import 'variables';
+
+.home-section {
+  padding: 5rem 2rem;
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $secondary-color;
+  }
+}
